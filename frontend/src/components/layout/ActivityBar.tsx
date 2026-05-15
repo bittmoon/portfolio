@@ -3,7 +3,7 @@ import { useWorkspaceStore } from '../../store/workspaceStore';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
-const ActivityIcon = ({ icon: Icon, isActive, onClick, title }: any) => {
+const ActivityIcon = ({ icon: Icon, id, isActive, onClick, title }: any) => {
   return (
     <div 
       className={twMerge(
@@ -39,18 +39,21 @@ export const ActivityBar = () => {
       <div className="flex flex-col items-center pt-2 gap-2">
         <ActivityIcon 
           icon={VscFiles} 
+          id="explorer" 
           isActive={activeSidebar === 'explorer'} 
           onClick={() => handleIconClick('explorer')}
           title="Explorer"
         />
         <ActivityIcon 
           icon={VscSearch} 
+          id="search" 
           isActive={activeSidebar === 'search'} 
           onClick={() => handleIconClick('search')}
           title="Search"
         />
         <ActivityIcon 
           icon={VscCommentDiscussion} 
+          id="chat" 
           isActive={activeSidebar === 'chat'} 
           onClick={() => handleIconClick('chat')}
           title="AI Assistant"
@@ -60,18 +63,21 @@ export const ActivityBar = () => {
       <div className="flex flex-col items-center pb-4 gap-2">
         <ActivityIcon 
           icon={VscColorMode} 
+          id="theme" 
           isActive={false} 
           onClick={toggleTheme}
           title={`Toggle Theme (${theme === 'dark' ? 'Light' : 'Dark'})`}
         />
         <ActivityIcon 
           icon={VscAccount} 
+          id="about" 
           isActive={activeSidebar === 'about'} 
           onClick={() => handleIconClick('about')}
           title="About Me"
         />
         <ActivityIcon 
           icon={VscSettingsGear} 
+          id="settings" 
           isActive={activeSidebar === 'settings'} 
           onClick={() => handleIconClick('settings')}
           title="Settings"
