@@ -42,7 +42,7 @@ export const Dashboard = () => {
           </p>
           
           <div className="flex flex-wrap gap-4">
-            <a href="/resume.pdf" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-accent hover:bg-accent/80 text-white px-4 py-2 rounded transition-colors text-sm">
+            <a href="resume.pdf" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-accent hover:bg-accent/80 text-white px-4 py-2 rounded transition-colors text-sm">
               <VscFilePdf /> View Resume
             </a>
             <a href="https://github.com/bittmoon" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-element-bg hover:bg-element-hover text-text-primary px-4 py-2 rounded transition-colors text-sm">

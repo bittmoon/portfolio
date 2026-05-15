@@ -28,7 +28,7 @@ export const projects: Project[] = [
     technologies: ['React', 'Vite', 'API', 'Firebase', 'Auth'],
     liveDemoUrl: 'https://bittmoon.github.io/jobtracker/',
     githubUrl: 'https://github.com/bittmoon/jobtracker',
-    image: '/Dashboard.png',
+    image: 'Dashboard.png',
   },
   {
     id: 'smart-expense-tracker',
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     technologies: ['React', 'Hooks', 'CSS', 'Local Storage'],
     liveDemoUrl: 'https://bittmoon.github.io/smart-expense-tracker/',
     githubUrl: 'https://github.com/bittmoon/smart-expense-tracker',
-    image: '/SmartE.png',
+    image: 'SmartE.png',
   },
   {
     id: 'arcade-landing-page',
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     technologies: ['React', 'CSS', 'GitHub Pages'],
     liveDemoUrl: 'https://bittmoon.github.io/arcade-landing-page/',
     githubUrl: 'https://github.com/bittmoon/arcade-landing-page',
-    image: '/land.png',
+    image: 'land.png',
   }
 ];
 

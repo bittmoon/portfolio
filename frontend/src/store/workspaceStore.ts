@@ -1,6 +1,5 @@
 import { create } from 'zustand';
 import type { Project, CaseStudy } from '../data/projects';
-import { projects, caseStudies } from '../data/projects';
 
 export type TabType = 'project' | 'case-study' | 'dashboard' | 'chat' | 'about';
 

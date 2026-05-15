@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useWorkspaceStore } from '../../store/workspaceStore';
 import { projects, caseStudies } from '../../data/projects';
-import { VscSearch, VscFileCode, VscMarkdown } from 'react-icons/vsc';
+import { VscFileCode, VscMarkdown } from 'react-icons/vsc';
 
 export const SearchPanel = () => {
   const [query, setQuery] = useState('');

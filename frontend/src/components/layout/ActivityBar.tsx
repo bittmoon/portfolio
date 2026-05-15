@@ -3,7 +3,7 @@ import { useWorkspaceStore } from '../../store/workspaceStore';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
-const ActivityIcon = ({ icon: Icon, id, isActive, onClick, title }: any) => {
+const ActivityIcon = ({ icon: Icon, isActive, onClick, title }: any) => {
   return (
     <div 
       className={twMerge(

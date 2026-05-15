@@ -57,7 +57,7 @@ export const CommandPalette = () => {
               key={idx}
               className="px-4 py-2 hover:bg-accent hover:text-white cursor-pointer text-sm text-text-primary flex items-center"
               onClick={() => {
-                openTab({ id: item.id, title: item.title, type: item.type as any, data: item.data });
+                openTab({ id: item.id, title: item.title, type: item.type as any, data: (item as any).data });
                 setIsOpen(false);
                 setSearch('');
               }}
